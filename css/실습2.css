@@ -1,0 +1,17 @@
+a:hover {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+}
+
+nav button:hover {
+    background-color: aqua;
+    color: antiquewhite;
+}
+
+nav button:active {
+    background-color: darkgreen;
+    color: blue;
+}
