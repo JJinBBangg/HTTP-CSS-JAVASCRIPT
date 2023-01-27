@@ -1,0 +1,15 @@
+/* external css(외부) CSS */
+h1 {
+    color: aqua;
+    background-color: black;
+}
+
+h2 {
+    color: blue;
+    background-color: aquamarine;
+}
+
+p {
+    color: red;
+    background-color: rgb(29, 102, 102);
+}
