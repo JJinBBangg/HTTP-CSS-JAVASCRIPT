@@ -1,0 +1,47 @@
+span {
+    color: aliceblue;
+}
+
+.tag {
+    color: bisque;
+    background-color: black;
+    letter-spacing: 15px;
+}
+
+#sk {
+    color: aqua;
+    letter-spacing: 15px;
+}
+
+nav li a {
+    color: aquamarine;
+}
+
+nav input[type="text"] {
+    color: antiquewhite;
+}
+
+nav input[type="password"] {
+    color: aquamarine
+}
+
+mdn attribute sekectors
+
+/* 포함된 말 // */
+a[href*="nan"] {}
+
+/* 끝나는 말 */
+a[href$=".om"] {
+    color: beige;
+    background-color: blue;
+}
+
+/* 버튼 커서올릴 시 색바뀜 */
+nav button:hover {
+    background-color: blue;
+    color: aqua;
+}
+
+body a:hover {
+    text-decoration: underline;
+}
