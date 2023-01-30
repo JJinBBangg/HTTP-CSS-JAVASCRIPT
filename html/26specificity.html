@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 선택자를 구체적,세부적으로 선택할 수록 우선순위가 높다 */
+        /* specificity 0.0.0 콤마을 제외한 수 비교 ex)1.2.1. 121점 */
+        /* element selector 1자리 */
+        /* class selector 10자리 */
+        /* id selector 100자리 */
+        h1 {
+            border: 5px solid;
+        }
+
+        h1.note {
+            border: 5px dotted;
+        }
+
+        h1.note.error {
+            border: 5px double;
+        }
+
+        .note.error {
+            border: 5px outset;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem, ipsum dolor.</h1>
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note error">Lorem, ipsum dolor.</h1>
+</body>
+
+</html>

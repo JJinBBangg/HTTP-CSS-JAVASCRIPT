@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: brown;
+        }
+
+        p {
+            color: chocolate;
+        }
+
+        /* 선택자를 띄워쓰기 없이 연속작성 */
+        /* 모든조건을 만족하는 요소 선택 */
+        p.note {
+            background-color: aqua;
+        }
+
+        p.error {
+            text-decoration: line-through;
+        }
+
+        p.error.note {
+
+            border: 5px solid;
+        }
+
+        .note.error {
+            text-align: center;
+
+            border: 5px dotted red;
+        }
+
+        h1.note.error {
+            text-align: right;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note">Consequatur, cumque alias?</h1>
+    <h1 class="note error">Nihil, labore ea?</h1>
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque, maiores ratione. At voluptatum
+        provident reprehenderit, illo hic molestiae alias mollitia ipsam! Dolor earum repellendus in perspiciatis,
+        inventore sequi. Reiciendis, possimus!</p>
+    <p class="note error">Id eos et voluptatum quibusdam error velit illum officiis nam officia nihil dolorem nostrum
+        nisi deserunt earum sequi debitis modi maiores iste nesciunt quam expedita, laborum, fugiat quidem. Provident,
+        corporis.</p>
+    <p class="note error">Officia, repellendus. Impedit reprehenderit fugit facilis voluptate natus necessitatibus
+        tempora illum fuga minus assumenda debitis laboriosam, architecto voluptatem ad magnam nulla cupiditate. Totam
+        quia nobis alias eveniet iusto sit nisi.</p>
+    <p class="note error">Officia, repellendus. Impedit reprehenderit fugit facilis voluptate natus necessitatibus
+        tempora illum fuga minus assumenda debitis laboriosam, architecto voluptatem ad magnam nulla cupiditate. Totam
+        quia nobis alias eveniet iusto sit nisi.</p>
+</body>
+
+</html>

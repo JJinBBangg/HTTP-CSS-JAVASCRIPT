@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <style>
+        #my head {
+            color: blue;
+        }
+
+        #myhead {
+            color: yellow;
+        }
+
+        #myHead {
+            color: green;
+        }
+
+        #yourHead {
+            text-decoration: underline;
+        }
+
+        #3head {
+            text-align: right;
+        }
+    </style>
+</head>
+
+</html>
+
+<body>
+    <!-- 중복되지 않게 영문,숫자, -, _만 사용 -->
+    <h1 id="my head">Lorem, ipsum dolor.</h1>
+    <h1 id="myhead">Lorem, ipsum dolor.</h1>
+    <h1 id="myHead">Lorem, ipsum dolor.</h1>
+
+    <!-- 동일한 아이디 중복 사용하더라도 구현될 수 있으나 사용하면 안됨 -->
+    <h1 id="yourHead">Lorem, ipsum dolor.</h1>
+    <h1 id="yourHead">Lorem, ipsum dolor.</h1>
+
+    <!-- 숫자로 시작하다러도 구현될 수 있으나 사용하면 안됨 -->
+    <h1 id="3head">Lorem, ipsum dolor.</h1>
+
+    <!-- emmet : #이 id속성 -->
+    <!-- h1#hishead> -->
+    <h1 id="hishead"></h1>
+
+    <!-- h1#hishead.myhead>lorem3 -->
+    <h1 id="hishead" class="myhead">Lorem, ipsum dolor.</h1>
+
+    <!-- h1#head$*3>lorem3 -->
+    <h1 id="head1">Lorem, ipsum dolor.</h1>
+    <h1 id="head2">Possimus, est beatae!</h1>
+    <h1 id="head3">Quo, culpa magnam.</h1>
+
+</body>

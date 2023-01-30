@@ -1,0 +1,32 @@
+.error {
+    background-color: blueviolet;
+    color: aqua;
+}
+
+.note {
+    background-color: yellow;
+}
+
+.delete {
+    text-decoration: line-through;
+}
+
+#my head {
+    color: blue;
+}
+
+#myhead {
+    color: yellow;
+}
+
+#myHead {
+    color: green;
+}
+
+#yourHead {
+    text-decoration: underline;
+}
+
+#3head {
+    text-align: right;
+}
