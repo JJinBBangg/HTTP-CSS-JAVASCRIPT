@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            color: blue;
+        }
+
+        /* title 속성이 있는 요소들 */
+        [title] {
+            text-decoration: underline;
+        }
+
+        /* title 속성이있는 p요소들 */
+        p[title] {
+            border: 5px solid;
+        }
+
+        /* h1을 조상으로 둔 title 요소들(space차이) */
+        h1 [title] {
+            border: 5px dotted;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Lorem. <span title="123">Lorem.</span>Lorem, ipsum.</h1>
+    <h1 title="hello">Lorem.</h1>
+    <h1 title="world">Tempore.</h1>
+    <h1>Dolore.</h1>
+    <h1>Qui.</h1>
+    <h1>Voluptate.</h1>
+
+
+    <p title="hi css">Lorem, ipsum dolor.</p>
+    <p>Asperiores, impedit consequatur?</p>
+    <p>Rerum, qui maiores.</p>
+</body>
+
+</html>
