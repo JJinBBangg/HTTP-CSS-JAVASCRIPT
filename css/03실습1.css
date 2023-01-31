@@ -25,13 +25,14 @@ nav input[type="password"] {
     color: aquamarine
 }
 
-mdn attribute sekectors
+/* mdn attribute sekectors
 
 /* 포함된 말 // */
-a[href*="nan"] {}
+/* a[href*="nan"] {} */
+*/
 
 /* 끝나는 말 */
-a[href$=".om"] {
+a[href$=".com"] {
     color: beige;
     background-color: blue;
 }
