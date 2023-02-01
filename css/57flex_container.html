@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .item {
+            background-color: aqua;
+            color: blueviolet;
+            font-size: 40px;
+            font-weight: bold;
+            padding: 17px;
+        }
+
+        .item:nth-child(even) {
+            background-color: bisque;
+        }
+
+        .box {
+            background-color: darkgray;
+            display: flex;
+            height: 500px;
+            /* 메인축(가로) 기준으로 item들을 어떻게 배치할 것인지? */
+            justify-content: space-around;
+            /*space-evenly :배경 item 공간 동일  */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+        <div class="item">5</div>
+    </div>
+</body>
+
+</html>
