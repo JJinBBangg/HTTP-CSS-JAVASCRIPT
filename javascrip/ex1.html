@@ -11,16 +11,23 @@
 </head>
 
 <body>
-
+    <input type="text">
+    <button onclick="guess()">입력</button>
+    <p id="result"></p>
+    <p id="count"></p>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let age = prompt("나이를 입력하세요")
-        age = Number(age); // 숫자로 변환
-        if (age >= 20) {
-            console.log("어른입니다.");
-        } else {
-            console.log("어른이 아닙니다.");
+        let com = parseInt(Math.random() * 100) + 1;
+        console.log(com);
+
+
+        function button_onclick(geuss) {
+            let count = 0;
+            count++;
+            alert(count + "회 클릭하셨습니다.")
         }
+        document.querySelector("#result").textContent = message;
+
     </script>
 </body>
 
