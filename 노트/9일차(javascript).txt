@@ -65,7 +65,8 @@ for문
             console.log("b", b);
         }
 
-        /* let b = 2; */
         console.log("a", a);
-        console.log("b", b);
+        console.log("b", b);   // 오류코드
   // 코드블럭 내부에서 선언된 let 변수는 코드블럭외부에서 사용불가능
+
+break and continue
