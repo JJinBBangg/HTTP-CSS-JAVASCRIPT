@@ -1,0 +1,71 @@
+조건연산 삼항연산(ternary) 물음표연산
+
+삼항연산
+  (1항) ? (2항) : (3항) 
+ 삼항연산자
+ 결과가 2항 or 3항
+ 결과는 1항이 true 이면 2항 
+        1항이 false 이면 3항 
+
+
+switch문
+key와 value가 일치하는 곳부터 braek;를 만나는 곳까지 실행
+
+        switch (key) {
+            case value:
+                
+                break;
+        
+            default:
+                break;
+        }
+
+반복문(loop) : for, while
+while문
+
+        let i = 0;
+        console.log(1);
+        while (/*조건*/ i < 10) {
+            // 조건이 true 면 code block 실행
+            // 다시 조건 확인
+            // 조건이 false이면 다음으로 넘어감
+
+            //code block
+            console.log(2);
+            console.log(3);
+            console.log(i);
+            i++;
+        }
+        console.log(4);
+        console.log(5);
+    </script>
+
+for문
+        let a = 0; // 초기화
+        while (a < 5) { // 조건
+            console.log("a", a);
+            a++; // 조건변경코드
+        }
+        // for(초기화코드; 조건문; 조건변경코드)     
+        for (let b = 0; b < 5; b++) {
+            console.log("b", b);
+        }
+
+---변수의 scope---
+
+ let const 의 scope은 선언된 코드블럭 내
+ 즉, 코드블럭 내에서만 사용가능
+      
+  let a = 5;//코드블럭 내부에 있지 않지만 사용가능 코드 블럭 내부에서
+
+        if (true) {
+            let b = 10;
+
+            console.log("a", a);
+            console.log("b", b);
+        }
+
+        /* let b = 2; */
+        console.log("a", a);
+        console.log("b", b);
+  // 코드블럭 내부에서 선언된 let 변수는 코드블럭외부에서 사용불가능

@@ -1,0 +1,91 @@
+Javascript
+1. 블록문(Block)
+  {StatementList}
+   - 레이블된 블록문
+     LabelIdetifier: {StatementList}
+
+2. braek
+   while (i < 6) {
+  if (i === 3) {
+    break;
+  }
+  - 문의 라벨에 연결한 식별자. 반복문이나 switch에서 사용하는게 아니면 필수로 제공해야 합니다.
+
+3.
+
+* stackoverflow(프로그래머들의 지식인 사이트)
+  -문제해결 = 공식문서, stackoverflow
+* number() : 숫자열로 변경
+  parseInt() : 정수형태로 계산
+
+1~100사이 random 숫자 생성
+ let a = parseInt(Math.random() * 100) + 1;
+Math.random() ->  0 <= 생성된 수 < 1 생성
+parseInt -> 정수로 변환 
+
+
+---연산자---
+산술 연산자(+-/*) (우선순위operator precedence검색)
+JavaScript Operators
+1. 사칙 연산을 따름(*,/,**,%가 +,-보다 우선적으로 계산)
+ 
+2. 문자열(string)과 숫자(number)가 연산될 시 문자열로 연산
+  - 앞->뒤 순서대로 연산
+
+3.()가 가장 먼저 계산됨
+
+4. 사칙연산에 포함되더라도 가독성을 높이기 위해  *,/,% 괄호 처리해서 보기 쉽게 만들 것
+
+binary : 피연산자 두개의 산술연산자
+
+unary : 피연산자가 하나인 산술연산자(+, -, ++, --)(단항연산자)
+   ex1) let d = "2"; 
+        let f = 3 + (+d);  // string 앞 +를 붙이면 number로 바꿀 수 있음
+   ex2) let a = -3;
+        let b = -a; // 앞에 붙은 -곱셈처리 console.log(d) -> -(-3) = +3
+
+++, -- 단항 연산자
+ 1. ++ 증가(increment)연산자(단항 연산자)
+    ++ : 변수가 가진 값 + 1이 해당 변수에 다시 할 당
+    * 피연산자의 위치에 따라 연산의 결과가 다름
+
+ 2. -- 감소(decrement)연산자(단항 연산자)
+    -- : 변수가 가진 값 - 1이 해당 변수에 다시 할 당
+    * 피연산자의 위치에 따라 연산의 결과가 다름
+
+대입(할당)연산자 : assignment operator
+ =, +=, -=, *=, /=, %=, **=
+ = 오른쪽 값을 왼쪽에 대입(할당)
+ += 좌우항의 값을 더해서 왼쪽 변수에 할당
+
+비교 연산자
+ 두항을 비교한 결과 (boolean)
+ ==, ===, !=, !==, <, <=, >, >=
+
+ == : 값이 같으면 true 값이 다르면 false
+ === 값 and 타입이 같으면  true, 다르면 false
+ != : 값이 다르면 true 그렇지 않으면 false
+ !== : 값이 다르다 or 타입이 다르면 true
+
+<, <=, >, >=
+1) 타입이 다를 시 Number로 변환 후 비교
+2) 문자열 끼리 비교 시 유니코드 참조
+ *되도록 type을 변환하여 같은 형태로 비교할 것
+
+
+논리연산자(Logical : &&, ||, !)
+
+ 1) &&(and : 논리곱) : 두개의 항이 모두 true이면 결과가 true, 나머지는 false
+                      * 피연산자의 타입 boolean
+
+ 2) ||(or : 논리합) : 두개의 항이 모두 false면 결과가 false, 나머지는  true
+                      * 피연산자의 타입 boolean
+
+ 3) !(not) : 피연산자 하나(boolean), 결과는 피연산자의 반대
+ex)
+ let x = 6;
+ let y = 3;
+
+ console.log((x < 10) && (y > 1)); // true
+ console.log((x === 5) || (y === 5)); // false
+ console.log(!(x === y)); // true

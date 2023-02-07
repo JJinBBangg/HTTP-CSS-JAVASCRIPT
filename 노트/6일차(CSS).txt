@@ -1,0 +1,65 @@
+---box model---
+
+1.border(css borders 검색) 글의 태두리 부분 꾸밈
+border style
+border-(top,right,bottom,left)-style:
+
+border width
+border-(top,right,bottom,left)-width: 
+
+*특징
+border-style(width): 1~4개 value 사용
+4개 사용시 상우하좌 순서
+3개 사용시 상 좌우 하
+2개 사용시 상하 좌우
+1개 사용시 상하좌우
+color 등등 동일하게 사용
+
+
+border-style: double;
+border-width: 10px;
+border-color: aquamarine;
+
+(위와 동일 short hand property)
+border: 10px double aquamarine;
+
+2. margin : 보더 바깥부분의 넓이를 정의
+*특징 : margin 겹칠 경우 좌우는 구분되지만 상하는 겹치는부분 생길 수 있음 
+
+3. padding : 글자바깥부분의 넓이와높이 
+
+4.content 글자의 넓이와 높이
+width
+height
+
+---요소갸 배치되는 방식---
+
+1. block
+  1) 가장넓은 너비를 갖는다.
+  2) 새로운줄에 배치된다
+
+2.inline
+  1) 필요한 만큼의 너비를 갖는다. 
+  2) 같은 줄에 배치된다.
+
+* 텍스트 사이 enter, space반영으로 띄어지는 부분은 element붙여씀
+ 위의 문제로 element로 붙여쓰고싶은 경우 display:flex;를 사용(flexbox)
+
+
+*flexbox(https://css-tricks.com/snippets/css/a-guide-to-flexbox/)
+  1) flexcontainer 감싸이고 있는 태그
+  2) flexitem 내부에 있는 자식요소(자손X)
+
+가로축 main axis
+세로축 cross axis
+가로 시작 main start
+가로 종료 main start
+세로 시작 cross start
+세로 종료 cross end
+
+
+2차원 정리 할 때 grid
+
+
+
+

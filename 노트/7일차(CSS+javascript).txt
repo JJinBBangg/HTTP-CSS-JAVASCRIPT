@@ -1,0 +1,82 @@
+<div class="container">
+container : 화면크기 커지더라도 고정 및 줄어들때 간격 및 padding조절
+bootstrap -> container 
+
+grid  - CSS(2차원), bootstrap(한개 행) 차이있음 
+row 내에서 col 총합 12내에서 지정한 수만큼 나눠 가질 수 있음
+<div class="container"></div>
+    <div class="row">
+        <div class="col-6 rr">1</div>
+        <div class="col-4 rr">2</div>
+        <div class="col-2 rr">3</div>
+    </div>
+    </div>
+반응형 웹 디자인
+responsive wev design
+
+
+-----------JAVA script-----------
+1.명령문,실행문(statement)
+  1)자바스크립트 프로그램은 명령문들로 구성되어있다.
+  2)statement (명령문)
+  3)하나의 의미 있는 실행 코드
+  4)변수, 값, 연산자, 식, 키워드 등으로 구성
+  5)대부분 ;으로 끝난다(;는 생략가능하다)
+  6)작성된 순서대로 실행됨(제어문 배우기 전까지)
+
+    <script>
+        console.log("첫번째 실행문");
+        console.log("두번째 실행문");
+        console.log("세미콜론 생략가능")
+        console.log("하지만 수업 중에는 세미콜론 꼭 사용");
+        document.getElementById("demo").innerHTML = "Hello world";
+        document.getElementById("demo").innerHTML
+            = "Hello world1";
+        // 하나의 명령문(실행문)은 여러줄로 작성될 수 있음(들여쓰기)
+    </script>
+
+---변수---
+var
+let
+---상수---
+const
+
+캐밥, 스네이크 ,카멜, 파스칼 케이스 중 카멜 케이스사용
+className
+javascrip변수의 종류(type)
+1) boolean
+2) null
+3) undefined 
+4) number
+5) bigint 
+6) string 
+7) symbol 
+8) object
+
+
+Java변수의 종류(type)
+1) boolean은 true와 false 두 값만 표현하면 되기에 1바이트면 충분하다.
+  - 기본 값: false
+2) char는 자바에서 유니코드(2 byte문자 체계)를 사용하기에 2byte
+  - 기본 값: \u0000
+3) byte는 크기가 1byte이므로 byte.
+  - 기본 값: 0
+4) int(4 byte)를 기준으로 짧게는 (2 byte) 길게는 (8 byte)를 취사선택한다. 
+  - 기본 값: 0
+5) float은 실수값을 부동소수점(floating-point)방식으로 저장하기 때문에 float
+  - 기본 값: 0.0F
+6) double은 float보다 두 배의 크기(8byte)를 갖기 때문에 double
+  - 기본 값: 0.0
+7) number
+
+8) string
+
+
+Expression: 값을 생성한다.
+
+
+Statement: action을 수행한다.
+Statement는 어떤 동작을 하는 명령을 나타내고, 값을 생성하지는 않는다.
+
+
+EXpression statement: 값을 생성하고 action을 수행한다.

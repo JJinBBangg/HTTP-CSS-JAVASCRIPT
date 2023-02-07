@@ -1,0 +1,36 @@
+1. google 검색 키워드  기능(*@# ....)
+2. 요즘it (칼럼)
+3. 회의도구
+
+
+
+hrml
+<(element) (attrinbutes)="(property)">
+
+attributes
+시작태그에만 포함됨
+부가설명
+<form action="www...ww">
+<a herf=>
+<input type="checkbox" name="aaa" class="sss" value="dd">
+</form>
+
+property
+attributes의 특성값을 나타냄
+<a href      =      "dsddddd"
+   attributes        property     
+
+hexdecimal
+decimal
+octaldecimal
+binary
+
+
+CSS Syntax
+선언 declaration
+property
+value
+rule set
+selector      declaration          declaration
+h1(선택자) {color   :  blue; font-size   :   12px;}
+            property   value  property       value
