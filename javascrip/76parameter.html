@@ -14,38 +14,36 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = "java";
-        let b = "html";
-        let c = "css";
-        let d = "javascript";
-        let e = "react";
-
-        console.log(a);
-        console.log(b);
-        console.log(c);
-        console.log(d);
-        console.log(e);
-
-        // array : 여러 값을 저장한 자료형
-        let f = ["java", "html", "css", "javascipt", "vue", "react"];
-
-        for (let i = 0; i < f.length; i++) {
-            console.log(f[i]);
+        function a() {
+            console.log("파라미터가 없는 함수");
         }
-        //여러 값을 타입 구분없이 가질 수 있음
-        let g = [3, "css", true, 3.14, null, undefined];
+        a();
+        a(33);
 
-        //빈 배열
-        let h = [];
+        function b(param1, param2) {
+            console.log("파라미터 2개가 있는 함수");
+            console.log(param1);
+            console.log(param2);
+        }
+        b();
+        b(11);
+        b(22, 33);
 
-        //코드가 길면 각 값 앞에서 새로운 줄 입력
-        let i = [
-            "javascript",
-            "html은 페이지의 구조를 나타낸다.",
-            "css는 html요소를 꾸며주는 코드다."
-        ];
-          
-        () => { return { a: 1 }; }
+        function printDouble(param1) {
+            console.log(param1 * 2);
+        }
+        printDouble(1);
+        printDouble(3);
+        printDouble(4);
+        printDouble(100);
+
+        function printSum(param1, param2) {
+            console.log(param1 + param2);
+        }
+        printSum(3, 4);
+        printSum(100, 200);
+        printSum("java", "css");
+
     </script>
 </body>
 

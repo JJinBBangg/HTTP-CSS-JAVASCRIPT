@@ -14,38 +14,25 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = "java";
-        let b = "html";
-        let c = "css";
-        let d = "javascript";
-        let e = "react";
+        //index값 0,1,2
+        let a = ['java', 'spring', 55];
 
-        console.log(a);
-        console.log(b);
-        console.log(c);
-        console.log(d);
-        console.log(e);
+        //object(객체) : 여러 값을 저장한 자료형(data type)
+        // {} : object를 만들때 사용
+        // {name: "object"} 순서가 없고 이름을 이용하여 사용
 
-        // array : 여러 값을 저장한 자료형
-        let f = ["java", "html", "css", "javascipt", "vue", "react"];
+        let b = { lang: 'java', frame: 'spring', age: 55 };
+        console.log(b['lang']);
+        console.log(b['frame']);
+        console.log(b['age']);
+        //값을 읽을 때 []안에 string 형태로(위 형태로는 자주사용하지 않음)
 
-        for (let i = 0; i < f.length; i++) {
-            console.log(f[i]);
-        }
-        //여러 값을 타입 구분없이 가질 수 있음
-        let g = [3, "css", true, 3.14, null, undefined];
+        console.log(b.lang);
+        console.log(b.frame);
+        console.log(b.age);
+        //대부분 위 형태로 사용
 
-        //빈 배열
-        let h = [];
 
-        //코드가 길면 각 값 앞에서 새로운 줄 입력
-        let i = [
-            "javascript",
-            "html은 페이지의 구조를 나타낸다.",
-            "css는 html요소를 꾸며주는 코드다."
-        ];
-          
-        () => { return { a: 1 }; }
     </script>
 </body>
 

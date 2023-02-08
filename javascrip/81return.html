@@ -14,38 +14,24 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = "java";
-        let b = "html";
-        let c = "css";
-        let d = "javascript";
-        let e = "react";
 
-        console.log(a);
-        console.log(b);
-        console.log(c);
-        console.log(d);
-        console.log(e);
-
-        // array : 여러 값을 저장한 자료형
-        let f = ["java", "html", "css", "javascipt", "vue", "react"];
-
-        for (let i = 0; i < f.length; i++) {
-            console.log(f[i]);
+        //return : 1. 오른쪽 값을 반환한다
+        //         2. 리턴키워드를 반환함과 동시에 함수를 종료한다. 
+        function whichMovie(age) {
+            if (age >= 20) {
+                return "데드풀";
+            } else if (age >= 15) {
+                return "어벤져스";
+            } else if (age >= 5) {
+                return "뽀로로";
+            }
+            console.log("리턴 이후의 코드"); // return이후의 코드는 실행되지 않음
         }
-        //여러 값을 타입 구분없이 가질 수 있음
-        let g = [3, "css", true, 3.14, null, undefined];
+        let age = +prompt("나이를 입력해주세요.", 0)
 
-        //빈 배열
-        let h = [];
+        let movie = whichMovie(age);
 
-        //코드가 길면 각 값 앞에서 새로운 줄 입력
-        let i = [
-            "javascript",
-            "html은 페이지의 구조를 나타낸다.",
-            "css는 html요소를 꾸며주는 코드다."
-        ];
-          
-        () => { return { a: 1 }; }
+        console.log(movie)
     </script>
 </body>
 

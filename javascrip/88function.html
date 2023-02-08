@@ -14,38 +14,47 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        let a = "java";
-        let b = "html";
-        let c = "css";
-        let d = "javascript";
-        let e = "react";
+        // 함수는 값
 
-        console.log(a);
-        console.log(b);
-        console.log(c);
-        console.log(d);
-        console.log(e);
-
-        // array : 여러 값을 저장한 자료형
-        let f = ["java", "html", "css", "javascipt", "vue", "react"];
-
-        for (let i = 0; i < f.length; i++) {
-            console.log(f[i]);
+        // 함수 선언(function declaration)
+        function frame(param) {
+            // 코드들..
         }
-        //여러 값을 타입 구분없이 가질 수 있음
-        let g = [3, "css", true, 3.14, null, undefined];
+        // 함수식(function expression)
+        // 변수에 할당
+        let d = function a(params) {
+            //코드들...
+            console.log("함수식으로 작성된 함수 내 코드");
+        }
+        d();
 
-        //빈 배열
-        let h = [];
+        //인수로 함수 전달
+        function e(param) {
+            console.log(param);
+        }
+        e(function f() {
 
-        //코드가 길면 각 값 앞에서 새로운 줄 입력
+        })
+        //깂으로 반환 가능
+
+        function g(params) {
+            return function h(params) {
+
+            };
+        }
+        //데이터 구조에 저장가능
+        // 객체에 저장 된 함수를 메소드라고함
         let i = [
-            "javascript",
-            "html은 페이지의 구조를 나타낸다.",
-            "css는 html요소를 꾸며주는 코드다."
-        ];
-          
-        () => { return { a: 1 }; }
+            "css",
+            function j() {
+
+            }];
+        let k = {
+            name: "ahn",
+            walk: function l() {
+
+            }
+        };
     </script>
 </body>
 
