@@ -1,0 +1,51 @@
+object : 값(property)과 기능(method) 가지고있는 데이터 구조
+
+        let car = {
+            name: "kia", // 값
+            price: 5000, // 값
+            drive: function () {  // 기능
+                console.log("운전기능 실행 중...");
+            }
+        }
+
+
+메소드가 실행되고있는 블럭 내의 ovbjet 사용할 시 this. 붙임
+        let person = {
+            name: "son",
+            age: 33,
+            describe: function () {
+                console.log("이름은" + this.name + "이고 나이는" + this.age + "입니다.");
+            }
+        }
+
+	function introduce() {
+            console.log("이름은" + this.name + "나이는" + this.age + "입니다.");
+        }
+        let person1 = {
+            name: "son",
+            age: 22,
+            describe: introduce
+        }
+        let person2 = {
+            name: "cha",
+            age: 55,
+            describe: introduce
+        }
+        person1.describe();
+        person2.describe();
+
+DOM(Document Object model)
+    HTML 문서의 각요소를 객체로 만들어서 트리구조화 시킨 형태
+<script>
+let a = document.getElementById("r1"); = >html에서 r1아이디를 가진 엘리멘트를 리턴 => 변수 a에 할당
+console.log(a.textContent); =>r1 id를 가진 엘리멘트의 텍스트 컨텐트를 log찍음
+</script>
+https://www.w3schools.com/js/js_htmldom_document.asp
+
+getElementById("id")
+querySelector("#id") => css문법, 1개만 할당(class인경우 처음 1개)
+
+event
+addEventListener
+https://www.w3schools.com/jsref/dom_obj_event.asp
+
