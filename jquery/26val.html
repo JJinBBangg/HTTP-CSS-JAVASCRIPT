@@ -11,29 +11,30 @@
 </head>
 
 <body>
-    <h1>
-        Lorem.
-    </h1>
-    <h1>
-        Doloremque.
-    </h1>
-    <button onclick="fadeOutHead()">숨기기</button>
-    <button onclick="fadeInHead()">보이기</button>
-    <button onclick="toggleHead()">숨기기/보이기</button>
+    <div>
+        <input type="text" id="input1" placeholder="Hello">
+        <input type="ra">
+    </div>
+    <div>
+        <input type="text" id="input2" placeholder="World">
+    </div>
+    <div>
+        <input type="text" id="input3" placeholder="Jquery">
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        function fadeOutHead() {
-            $("h1").fadeOut(1000);
-        }
+        console.log($("#input1").val());
 
-        function fadeInHead() {
-            $("h1").fadeIn(1000);
-        }
+        $("#input2").keyup(function () {
+            console.log($(this).val());
+        });
+        $("#input3").keyup(function (e) {
+            if (e.key === "Enter") {
+                console.log($(this).val());
+            }
 
-        function toggleHead() {
-            $("h1").toggle();
-        }
+        });
 
     </script>
 </body>

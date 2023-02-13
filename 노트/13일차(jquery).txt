@@ -1,20 +1,28 @@
-------jquery------
+----jquery----
 
-$("#head1") // 같음
-document.querySelector("#head1") // 같음
 
-(https://api.jquery.com/ => jquery 메소드 선택하여 사용)
-검색 사용 시 removed 되어있는지 버전 확인
+1. console.log(("#ID").text());
+  내부(자손) 텍스트 내용(()내부에 text set 사용 시 태그도 문자형태로)
 
-$("#id").method()
+2.  console.log(("#ID").html());
+  내부(자식) 태그 포함 전체 내용(()내부에 text 사용 시 태그를 html형식으로) 
 
-전역객체
-function(){
-   alert("hello");
-}
-window.func()
-객체.속성
-객체 window
-속성 func()
-속성이 함수 : method
-this 는 함수 내부에서 사용하는 변수(가변적)
+3. ("#ID").val();
+  input 내용 
+  
+4. ("#ID").(add)()
+      <div>         content         </div>
+before      prepend         append         after
+
+remove
+
+
+
+
+
+
+
+
+text("skdnaksndlasdasdklnasld:"
+html("sdkflsdnkfsklsdk<p>
+

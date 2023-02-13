@@ -11,29 +11,31 @@
 </head>
 
 <body>
-    <h1>
+    <div id="res1">
         Lorem.
-    </h1>
-    <h1>
-        Doloremque.
-    </h1>
-    <button onclick="fadeOutHead()">숨기기</button>
-    <button onclick="fadeInHead()">보이기</button>
-    <button onclick="toggleHead()">숨기기/보이기</button>
+    </div>
+    <div id="res2">
+        Odit.
+    </div>
+    <div id="res3">
+        Harum?
+    </div>
+    <div id="res4">
+        Lorem.
+    </div>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.bundle.min.js" integrity="sha512-i9cEfJwUwViEPFKdC1enz4ZRGBj8YQo6QByFTF92YXHi7waCqyexvRD75S5NVTsSiTv7rKWqG9Y5eFxmRsOn0A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js" integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        function fadeOutHead() {
-            $("h1").fadeOut(1000);
-        }
+        $("#res1").append("world");
+        $("#res2").append("<h1> hi </h1>");
+        let h2elem = document.createElement("h2");
+        h2elem.textContent = "world";
+        $("#res3").append(h2elem);
 
-        function fadeInHead() {
-            $("h1").fadeIn(1000);
-        }
-
-        function toggleHead() {
-            $("h1").toggle();
-        }
+        let h3elem = $("<h3> hello </h3>");
+        $("#res4").append(h3elem);
+        /*  h2elem.slideUp(2000); */ // jquery가 아니라 오류
+        h3elem.slideUp(3000);
 
     </script>
 </body>
