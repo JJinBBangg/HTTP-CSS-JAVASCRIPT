@@ -1,4 +1,4 @@
-package ex;
+package ex.ex;
 
 public class Example01 {
 	public static void main(String[] args) {

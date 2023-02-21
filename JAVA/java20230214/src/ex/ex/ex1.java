@@ -1,4 +1,4 @@
-package ex;
+package ex.ex;
 
 class Print1{
 	public String delimiter;
