@@ -13,12 +13,24 @@ public class C04CharAt {
 
 		System.out.println(str1.charAt(1));
 		char res1 = str1.charAt(str1.length() - 1);
+		
 		char res2 = str1.charAt(str1.length() - 2);
+		
 		System.out.println(String.valueOf(res1 + res2));
 
 		System.out.println(str1.charAt(str1.length() - 1));
 		String res = String.valueOf(str1.charAt(3));
 		System.out.println(res);
+		
+		
+		
+		String str = "aaaggrr";
+		String res3 = "";
+		  for(int i = 0; i < str.length(); i++){
+		    res3 += str.charAt(i)+str.charAt(i);
+		  } 
+		  str = res3;
+		  System.out.println(str);
 		
 		}
 	}
