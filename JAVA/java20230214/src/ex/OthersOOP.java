@@ -4,7 +4,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 
 public class OthersOOP {
-	public static void main(String[] args) throws IOException {
+	public void main(String[] args) throws IOException {
 		// class : System, Math, FileWriter
 		// instance : f1, f2
 		System.out.println(Math.PI);

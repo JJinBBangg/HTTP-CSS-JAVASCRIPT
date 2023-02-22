@@ -18,6 +18,7 @@ class RealCal implements Calculable, Printable{
 }
 public class InterpaceApp {
 	public static void main(String[] args) {
+		
 		Printable c = new RealCal(); //RealCal class에 implements인 Printable를 instance로 지정
 		Calculable d = new RealCal();// RealCal class에 implements인 Calculable를 instance로 지정
 		System.out.println(d.sum(2,1)); 
