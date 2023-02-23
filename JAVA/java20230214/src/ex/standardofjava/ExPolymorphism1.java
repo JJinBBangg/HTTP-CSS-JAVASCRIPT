@@ -79,7 +79,7 @@ class buyer2 {
 	}
 }
 
-public class Ex_01Polymorphism {
+public class ExPolymorphism1 {
 	public static void main(String[] args) {
 		buyer2 b = new buyer2();
 

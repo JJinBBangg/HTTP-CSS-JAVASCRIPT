@@ -42,7 +42,7 @@ class Buyer {
 	}
 }
 
-public class Ex7_8Polymorphism {
+public class ExPolymorphism {
 	public static void main(String args[]) {
 		Buyer b = new Buyer();
 
