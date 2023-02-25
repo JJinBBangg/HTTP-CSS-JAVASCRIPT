@@ -24,6 +24,10 @@ class Fighter extends Unit implements Fightable {
 	public void attack(Fightable f) {
 		System.out.println(f+"를 공격");
 		
+	} 
+	Fightable getFightable() {
+		Fighter f = new Fighter();
+		return f;
 	}
 
 }
@@ -31,10 +35,13 @@ class Fighter extends Unit implements Fightable {
 public class FighterTest {
 	public static void main(String[] args) {
 		Fighter f = new Fighter();
-		Unit i = new Fighter();
-		i.move(123, 345);
 		f.move(100,200);
 		f.attack(new Fighter());
 		f.stop();
+		
+		
+		Unit i = new Fighter();
+		i.move(123, 345);
+//		i.attack(); // Unit에 attack()없어서 사용불가
 	}
 }
