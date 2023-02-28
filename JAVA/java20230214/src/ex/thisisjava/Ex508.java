@@ -1,6 +1,6 @@
 package ex.thisisjava;
 
-public class ex508 {
+public class Ex508 {
 	public static void main(String[] args) {
 		int[][] array = {
 				{ 95, 86 },  //          for (int[] arr : array) {     각 배열 추출

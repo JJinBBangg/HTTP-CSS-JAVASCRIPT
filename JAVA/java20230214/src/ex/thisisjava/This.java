@@ -1,4 +1,4 @@
-package ex.standardofjava;
+package ex.thisisjava;
 
 
 class MyMath2 {
