@@ -1,4 +1,4 @@
-package lecture.p610access;
+package lecture.p610access.package1;
 
 import lecture.p610access.*;
 
