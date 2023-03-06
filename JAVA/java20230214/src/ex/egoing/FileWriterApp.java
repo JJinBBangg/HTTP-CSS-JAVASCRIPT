@@ -1,8 +1,7 @@
-package ex.sanghwalcoding;
+package ex.egoing;
 
-import java.io.FileWriter;
-import java.io.IOException;
-import java.io.Writer;
+import java.io.*;
+import java.util.*;
 
 public class FileWriterApp {
 	public static void main(String[] args) throws IOException {
@@ -12,5 +11,9 @@ public class FileWriterApp {
 		fileWriter.write("data 3");
 
 		fileWriter.close();
+		
+		ArrayList<String> a = new ArrayList<>();
+		a.clear();
+		a.add(0, null);
 	}
 }

@@ -1,4 +1,4 @@
-package ex.sanghwalcoding;
+package ex.egoing;
 
 class Cal1 {
 	public int sum(int v1, int v2) {

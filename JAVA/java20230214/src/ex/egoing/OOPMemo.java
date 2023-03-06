@@ -1,4 +1,4 @@
-package ex.sanghwalcoding;
+package ex.egoing;
 
 public class OOPMemo {
 	public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package ex.sanghwalcoding;
+package ex.egoing;
 
 class Cal {
 	int v1, v2;

@@ -9,10 +9,10 @@ import java.util.Set;
 
 public class LoginMain {
 	public static void main(String[] args) {
-		ArrayList<String>[] profiles = new ArrayList[100];
-		for(int i = 0; i<=99; i++){
-			profiles[i] = new ArrayList<String>();
-		}
+//		ArrayList<String> profiles = new ArrayList<>();
+////		for(int i = 0; i<=99; i++){
+////			profiles[i] = new ArrayList<String>();
+////		}    
 		Map<String, String> map = new HashMap<>();
 		Scanner scan = new Scanner(System.in);
 		boolean run = true;

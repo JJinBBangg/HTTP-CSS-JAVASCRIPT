@@ -1,4 +1,4 @@
-package ex.sanghwalcoding;
+package ex.egoing;
 interface Calculable{
 	double PI = 3.14;
 	int sum(int v1, int v2);

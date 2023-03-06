@@ -1,4 +1,4 @@
-package ex.sanghwalcoding;
+package ex.egoing;
 
 class Print {
 	public String delimiter = "";

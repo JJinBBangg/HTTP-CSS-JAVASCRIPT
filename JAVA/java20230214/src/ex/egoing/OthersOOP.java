@@ -1,4 +1,4 @@
-package ex.sanghwalcoding;
+package ex.egoing;
 
 import java.io.FileWriter;
 import java.io.IOException;

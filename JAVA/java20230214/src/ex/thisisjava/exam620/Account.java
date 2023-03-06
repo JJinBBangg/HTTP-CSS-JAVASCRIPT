@@ -1,11 +1,13 @@
 package ex.thisisjava.exam620;
 
+import java.util.*;
+
 public class Account {
 	private String name;
 	private String accNum;
 	private int money;
 	private boolean f;
-//	Scanner sc = new Scanner(System.in);
+	Scanner sc = new Scanner(System.in);
 
 	public String getName() {
 		return name;
@@ -38,13 +40,16 @@ public class Account {
 	}
 
 	// 계좌형식 확인
-	public void accNumCheck(String accNum) {
+	public String accNumCheck(String accNum) {
+		f = true;
 		while (f) {
 			if (!accNum.matches("[0-9]{3}-[0-9]{3}")) {
 				System.out.println("형식에 맞게 입력하세요. 예) 000-000");
+				System.out.print("계좌번호 : ");
+				accNum = sc.nextLine();
 			} else {
 				f = false;
 			}
-		}
+		} return accNum;
 	}
 }
