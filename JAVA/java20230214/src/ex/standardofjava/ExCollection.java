@@ -32,7 +32,7 @@ public class ExCollection {
 		// 구현 클래스 : HashMap, TreeMap, Hashtable, Properties 등
 		
 		// Collection
-		// List Set 공통부분을 뽑아서 Collection
+		// List Set 공통부분을 뽑아서 Collection 
 	}
 	
 }
