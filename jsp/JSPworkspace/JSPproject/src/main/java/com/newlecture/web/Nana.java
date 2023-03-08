@@ -9,12 +9,20 @@ import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 
-
 @WebServlet("/hello")
-public class Nana extends HttpServlet{
+public class Nana extends HttpServlet {
 	@Override
 	public void service(ServletRequest req, ServletResponse resp) throws ServletException, IOException {
+		resp.setCharacterEncoding("UTF-8");
+		resp.setContentType("text/html; charset=UTF-8");
+		String temp= req.getParameter("cnt");
+		int cnt = 100;
 		PrintWriter out = resp.getWriter();
-		out.println("hello ~~~");
+		if(temp != null && !temp.equals("")) {
+			cnt = Integer.parseInt(temp);
+		}
+		for (int i = 0; i < cnt; i++) {
+			out.println((i + 1) + " : 안녕 servlet!! <br>");
+		}
 	}
 }
