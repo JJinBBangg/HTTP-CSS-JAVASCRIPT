@@ -15,7 +15,7 @@ public class Nana extends HttpServlet {
 	public void service(ServletRequest req, ServletResponse resp) throws ServletException, IOException {
 		resp.setCharacterEncoding("UTF-8");
 		resp.setContentType("text/html; charset=UTF-8");
-		String temp= req.getParameter("cnt");
+		String temp= req.getParameter("title");
 		int cnt = 100;
 		PrintWriter out = resp.getWriter();
 		if(temp != null && !temp.equals("")) {
