@@ -9,7 +9,7 @@ public class C06WildCard {
 		MyClass06<?> o4 = new MyClass06<String>();
 		
 		MyClass06 o5 = new MyClass06(); 
-	}
+	} 
 }
 
 class MyClass06<T>{

@@ -16,7 +16,6 @@ import jakarta.servlet.http.HttpServletResponse;
 
 @WebServlet("/getpost")
 public class GetPost extends HttpServlet {
-
 	@Override
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		System.out.println("doGET 메소드가 호출됨");
@@ -30,7 +29,6 @@ public class GetPost extends HttpServlet {
 				}
 			}
 		}
-
 		PrintWriter out = response.getWriter();
 		out.write("<!DOCTYPE html>");
 		out.write("<html lang=\"en\">");
@@ -140,7 +138,8 @@ public class GetPost extends HttpServlet {
 		if (operator != null && operator.equals("C")) {
 			expCookie.setMaxAge(0);
 		}
+		expCookie.setPath("/getpost");
 		response.addCookie(expCookie);
-		response.sendRedirect("./");
+		response.sendRedirect("getpost");
 	}
 }

@@ -6,6 +6,7 @@ public class C03WildCard {
 //		o1.itme = new Number(); // ok (추상클래스여서 인스턴스화 못함)
 		o1.itme = new Integer(0); // ok
 //		o1.itme = new Object();
+		
 		MyClass03<? super Number> o2= new MyClass03<Object>();
 		
 		MyClass03<? extends Number> o3 = new MyClass03<Number>();

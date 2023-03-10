@@ -1,15 +1,16 @@
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en">	
 
 <head>
 <meta charset="UTF-8">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>계산기</title>
+<title></title>
 <style>
 .output {
 	height: 50px;
-	background: #e9e9e9;
+	background: #e9e9e9;  
 	font-size: 24px;
 	font-weight: bold;
 	text-align: right;
@@ -25,15 +26,14 @@ input {
 
 <body>
 	<form method="post">
-		<h1>계산기</h1>
 		<table>
 			<tr>
-				<td class="output" colspan="4" >0</td>
+				<td class="output" colspan="4" >${x+y}</td>
 			</tr>
 			<tr>
 				<td><input type="submit" name="operator" value="CE"></td>
 				<td><input type="submit" name="operator" value="C"></td>
-				<td><input type="submit" name="operator" value="←"></td>
+				<td><input type="submit" name="operator" value="BS"></td>
 				<td><input type="submit" name="operator" value="/"></td>
 			</tr>
 			<tr>
