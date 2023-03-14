@@ -16,7 +16,6 @@ public class Exam0507 {
 		}
 		System.out.println(max);
 		
-		
 		List<Integer> candies = List.of(2,3,5,1,3);
 		int extraCandies = 3;
         boolean[] result = new boolean[candies.size()];
