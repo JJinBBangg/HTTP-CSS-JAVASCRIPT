@@ -1,6 +1,8 @@
 package com.newlecture.web;
 
 import java.io.IOException;
+import java.util.HashMap;
+import java.util.Map;
 
 import jakarta.servlet.RequestDispatcher;
 import jakarta.servlet.ServletException;
@@ -19,16 +21,23 @@ public class Spag extends HttpServlet{
 			num = Integer.parseInt(num_);
 		}
 		String result = "";
-		if(num% 2 == 1){
-			result = "홀수입니다.";
-		} else {
+		if(num% 2 != 1){
 			result = "짝수입니다.";
+		} else {
+			result = "홀수입니다.";
 		}
-		request.setAttribute("r", result);
+		request.setAttribute("result", result);
+		String[] names = {"kookjin", "ahn"};
+		request.setAttribute("names", names);
+		Map<String, Object> notice = new HashMap<>();
+		notice.put("id",1);
+		notice.put("title", "제목");
+		request.setAttribute("notice", notice);
+		
 		//page context 내장객체 : 패이지 내에서만 사용가능
-		//request
+		//request : 페이지 간 연결하여 사용가능
 		//session : 현재 세션
-		//page : 모든 세션, 패이지
+		//application : 모든 세션, 패이지
 		//----------- 위 4가지 서버상에 저장----------//
 		
 		//cookie : 클라이언트에 저장
