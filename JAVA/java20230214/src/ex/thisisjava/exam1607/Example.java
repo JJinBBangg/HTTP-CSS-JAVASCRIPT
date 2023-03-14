@@ -12,8 +12,11 @@ public class Example {
 	}
 
 	public static void main(String[] args) {
-		int max = maxOrMin((x, y) -> x < y ? y : x);
+//		int max = maxOrMin((x, y) -> x < y ? y : x);
 //		int max = maxOrMin((x, y) -> Math.max(x , y));
+		int max = maxOrMin(Math::max);
+		
+		
 		System.out.println("최대값 : " + max);
 
 		int min = maxOrMin((x, y) -> x < y ? x : y);
