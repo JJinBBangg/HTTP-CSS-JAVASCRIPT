@@ -43,7 +43,6 @@ public class NoticeConsole {
 		// 상세조회
 		System.out.printf("1.상세조회 / 2.이전/ 3.다음/ 4.글쓰기/ 5.검색/ 6.종료 >");
 		int menu_ = Integer.valueOf(scanner.nextLine());
-
 		return menu_;
 	}
 

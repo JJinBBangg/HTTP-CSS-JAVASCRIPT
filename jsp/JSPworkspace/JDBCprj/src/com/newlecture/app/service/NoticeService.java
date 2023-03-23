@@ -17,11 +17,10 @@ public class NoticeService {
 	private String uid = "NEWLEC";
 	private String pwd = "1234";
 	private String driver = "oracle.jdbc.driver.OracleDriver";
+	private int start;
+	private int end;
 
 	public List<Notice> getList(int page, String field, String query) throws ClassNotFoundException, SQLException {
-
-		int start = 1 + (page - 1) * 10;
-		int end = 10 * page;
 
 		String sql = "select * from notice_view WHERE "+field+" LIKE ? AND NUM BETWEEN ? AND ?";
 
@@ -63,14 +62,23 @@ public class NoticeService {
 	}
 
 	// Scalar 값
-	public int getCount() throws ClassNotFoundException, SQLException {
+	public int getCount(int page, String field, String query) throws ClassNotFoundException, SQLException {
 		int count = 0;
-		String sql = "select COUNT(ID) COUNT from notice";
+		start = 1 + (page - 1) * 10;
+		end = 10 * page;
+
+//		"select * from notice_view WHERE "+field+" LIKE ? AND NUM BETWEEN ? AND ?";
+		
+		String sql = "select COUNT(ID) COUNT WHERE "+field+" LIKE ? from notice";
 
 		Class.forName(driver);
 		Connection con = DriverManager.getConnection(url, uid, pwd);
-		Statement st = con.createStatement();
-		ResultSet rs = st.executeQuery(sql);
+//		Statement st = con.createStatement();
+		PreparedStatement st = con.prepareStatement(sql);
+		st.setString(1, "%"+query+"%");
+		st.setInt(2, start);
+		st.setInt(3, end);
+		ResultSet rs = st.executeQuery();
 		if (rs.next())
 			count = rs.getInt("COUNT");
 
