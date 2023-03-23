@@ -2,19 +2,18 @@ package lecture.p1806buffered;
 
 import java.io.*;
 
-public class C03BufferedInputStream {
+public class C02BufferedOutputStream {
 	public static void main(String[] args) {
 		String name = "output/buffered1.txt";
-		
-		try (InputStream fos = new FileInputStream(name);
-				InputStream is = new BufferedInputStream(fos)) {
-			
+		try (OutputStream fos = new FileOutputStream(name);
+				OutputStream os = new BufferedOutputStream(fos)) {
 			long start = System.nanoTime();
-			while(is.read() != -1) {
-				
+			for(int i = 0; i < 1000_000; i++) {
+				os.write(1);
 			}
+			os.flush();
 			long end = System.nanoTime();
-			System.out.println(end - start);
+			System.out.println(end-start);
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();

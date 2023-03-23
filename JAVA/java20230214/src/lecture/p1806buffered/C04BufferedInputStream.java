@@ -2,15 +2,14 @@ package lecture.p1806buffered;
 
 import java.io.*;
 
-public class C02BufferedInputStream {
+public class C04BufferedInputStream {
 	public static void main(String[] args) {
 		String name = "output/buffered1.txt";
 		
-		try (InputStream fos = new FileInputStream(name);
-				InputStream is = new BufferedInputStream(fos)) {
+		try (InputStream fis = new FileInputStream(name)) {
 			
 			long start = System.nanoTime();
-			while(is.read() != -1) {
+			while(fis.read() != -1) {
 				
 			}
 			long end = System.nanoTime();
