@@ -11,7 +11,6 @@ public class Program1 {
 	public static void main(String[] args) throws ClassNotFoundException, SQLException {
 		String url = "jdbc:oracle:thin:@localhost:1521/xepdb1";
 		String sql = "SELECT * FROM NEWLEC.NOTICE";
-//		String sql = "SELECT * FROM NEWLEC.NOTICE WHERE HIT>10";
 
 		Class.forName("oracle.jdbc.driver.OracleDriver");
 		Connection con = DriverManager.getConnection(url, "NEWLEC", "1234");

@@ -22,6 +22,8 @@ public class NoticeService {
 
 	public List<Notice> getList(int page, String field, String query) throws ClassNotFoundException, SQLException {
 
+		start = 1 + (page - 1) * 10;
+		end = 10 * page;
 		String sql = "select * from notice_view WHERE "+field+" LIKE ? AND NUM BETWEEN ? AND ?";
 
 		Class.forName(driver);
@@ -69,15 +71,13 @@ public class NoticeService {
 
 //		"select * from notice_view WHERE "+field+" LIKE ? AND NUM BETWEEN ? AND ?";
 		
-		String sql = "select COUNT(ID) COUNT WHERE "+field+" LIKE ? from notice";
+		String sql = "select COUNT(notice_view) COUNT WHERE "+field+" LIKE ? from notice";
 
 		Class.forName(driver);
 		Connection con = DriverManager.getConnection(url, uid, pwd);
 //		Statement st = con.createStatement();
 		PreparedStatement st = con.prepareStatement(sql);
 		st.setString(1, "%"+query+"%");
-		st.setInt(2, start);
-		st.setInt(3, end);
 		ResultSet rs = st.executeQuery();
 		if (rs.next())
 			count = rs.getInt("COUNT");
@@ -138,9 +138,8 @@ public class NoticeService {
 		st.setString(2, content);
 		st.setString(3, files);
 		st.setInt(4, id);
-
+		
 		int result = st.executeUpdate();
-
 		st.close();
 		con.close();
 		return result;

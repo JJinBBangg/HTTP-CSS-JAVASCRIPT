@@ -25,7 +25,7 @@ public class NoticeConsole {
 
 	public void printNoticeList() throws ClassNotFoundException, SQLException {
 		List<Notice> list = service.getList(page, searchField, searchWord);
-		count = service.getCount();
+//		count = service.getCount();
 		System.out.println("-----------------------------------------------");
 		System.out.printf("<공지사항> 총 %d 게시글\n", count);
 		System.out.println("-----------------------------------------------");
@@ -56,7 +56,7 @@ public class NoticeConsole {
 	}
 
 	public void moveNextList() throws ClassNotFoundException, SQLException {
-		count = service.getCount();
+//		count = service.getCount();
 		if(page ==  (int)Math.ceil(count/10.0)) {
 		System.out.println("마지막페이지입니다.");
 		return;
