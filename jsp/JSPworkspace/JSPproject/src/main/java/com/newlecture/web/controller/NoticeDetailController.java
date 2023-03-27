@@ -24,11 +24,8 @@ public class NoticeDetailController extends HttpServlet{
 		int id = Integer.valueOf(request.getParameter("id"));
 
 		String url = "jdbc:oracle:thin:@localhost:1521/xepdb1";
-		String sql = """
-				"SELECT * "
-				"FROM NEWLEC.NOTICE "
-				"WHERE ID=? ";
-				""";
+		String sql = "SELECT * FROM NEWLEC.NOTICE WHERE ID=? ";
+
 
 		try {
 			Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -75,7 +72,7 @@ public class NoticeDetailController extends HttpServlet{
 		//redirect : 되돌려보내는것
 		//forward : 이어받아서 사용
 		request
-			.getRequestDispatcher("/notice/detail.jsp")
+			.getRequestDispatcher("/WEB-INF/view/notice/detail.jsp")
 			.forward(request, response);
 		
 	}

@@ -1,5 +1,6 @@
 package com.newlecture.web.controller;
 
+import java.io.IOException;
 import java.sql.Connection;
 import java.sql.Date;
 import java.sql.DriverManager;
@@ -11,6 +12,7 @@ import java.util.List;
 
 import com.newlecture.web.entity.Notice;
 
+import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
@@ -19,7 +21,7 @@ import jakarta.servlet.http.HttpServletResponse;
 @WebServlet("/notice/list")
 public class NoticeListController extends HttpServlet {
 	@Override
-	protected void doGet(HttpServletRequest request, HttpServletResponse response) {
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		List<Notice> list = new ArrayList<>();
 		String url = "jdbc:oracle:thin:@localhost:1521/xepdb1";
 		String sql = "SELECT * FROM NEWLEC.NOTICE";
@@ -58,6 +60,10 @@ public class NoticeListController extends HttpServlet {
 		} catch (SQLException e) {
 			e.printStackTrace();
 		}
+		request.setAttribute("list", list);		
+		request
+		.getRequestDispatcher("/WEB-INF/view/notice/list.jsp")
+		.forward(request, response);
 
 	}
 }
