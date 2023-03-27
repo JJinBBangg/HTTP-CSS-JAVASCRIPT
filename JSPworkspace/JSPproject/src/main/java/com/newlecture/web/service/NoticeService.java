@@ -22,7 +22,7 @@ public class NoticeService {
 
 	public int getNoticeCount() {
 
-		return 0;
+		return getNoticeCount("title", "");
 	}
 
 	public int getNoticeCount(String field, String query) {
