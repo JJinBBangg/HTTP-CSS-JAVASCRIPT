@@ -1,4 +1,4 @@
-package com.newlecture.web.etc;
+package com.newlecture.web.z_etc;
 
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -9,19 +9,21 @@ import jakarta.servlet.ServletResponse;
 import jakarta.servlet.annotation.WebServlet;
 import jakarta.servlet.http.HttpServlet;
 
-@WebServlet("/add")
-public class AddCalculator extends HttpServlet {
+@WebServlet("/notice-reg")
+public class NoticeReg extends HttpServlet {
 	@Override
 	public void service(ServletRequest request, ServletResponse response) throws ServletException, IOException {
-//		response.setCharacterEncoding("UTF-8"); // 인코딩 설정
-//		response.setContentType("text/html; charset=UTF-8");
+		response.setCharacterEncoding("UTF-8"); // 인코딩 설정
+		response.setContentType("text/html; charset=UTF-8");
+//		request.setCharacterEncoding("UTF-8");
 		
 		PrintWriter out = response.getWriter();
 		
-		int x= Integer.valueOf(request.getParameter("x"));
-		int y= Integer.valueOf(request.getParameter("y"));
+		String title= request.getParameter("title");
+		String content= request.getParameter("content");
 		
-		out.println(x+y);
+		out.println(title);
+		out.print(content);
 		
 	}
 }

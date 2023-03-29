@@ -1,4 +1,4 @@
-package com.newlecture.web.etc;
+package com.newlecture.web.z_etc;
 
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;

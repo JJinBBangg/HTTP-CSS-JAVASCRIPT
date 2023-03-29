@@ -11,13 +11,12 @@ import jakarta.servlet.annotation.WebFilter;
 
 @WebFilter("/*")
 public class CharacterEncodingFilter implements Filter {
-
 	@Override
 	public void doFilter(ServletRequest request, ServletResponse response, FilterChain chain)
 			throws IOException, ServletException {
-//		response.setCharacterEncoding("UTF-8");
+		request.setCharacterEncoding("UTF-8");
+		response.setCharacterEncoding("UTF-8");
 //		response.setContentType("text/html; charset=UTF-8");
-		chain.doFilter(request, response); // 흐름을 그대로 보낸다.
+		chain.doFilter(request, response);
 	}
-
 }

@@ -1,4 +1,4 @@
-package com.newlecture.web.etc;
+package com.newlecture.web.z_etc;
 
 import java.io.IOException;
 

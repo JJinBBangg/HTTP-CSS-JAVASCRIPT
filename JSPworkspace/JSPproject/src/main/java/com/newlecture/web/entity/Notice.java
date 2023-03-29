@@ -81,12 +81,11 @@ public class Notice {
 		this.files = files;
 	}
 
+
 	@Override
 	public String toString() {
 		return "Notice [id=" + id + ", title=" + title + ", writerId=" + writerId + ", regdate=" + regdate
 				+ ", content=" + content + ", hit=" + hit + ", files=" + files + "]";
 	}
-	
-}
 
-	
+}
