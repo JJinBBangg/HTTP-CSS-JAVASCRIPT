@@ -20,19 +20,22 @@ public class ListController1 extends HttpServlet {
 		String[] openIds = request.getParameterValues("open-id");
 		String[] delIds = request.getParameterValues("del-id");
 		String cmd = request.getParameter("cmd");
+		NoticeService service = new NoticeService();
+		int result;
 		switch (cmd) {
 		case "일괄공개":
-			for (String openId : openIds) {
-				System.out.printf("open id : %s\n", openId);
+			int[] opIds = new int[openIds.length];
+			for(int i = 0;i<opIds.length; i++) {
+				opIds[i]=Integer.valueOf(openIds[i]);
 			}
+			result = service.pubNoticeAll(opIds);
 			break;
 		case "일괄삭제":
-			NoticeService service = new NoticeService();
-			int[] ids = new int[delIds.length];
-			for(int i = 0;i<ids.length; i++) {
-				ids[i]=Integer.valueOf(delIds[i]);
+			int[] deids = new int[delIds.length];
+			for(int i = 0;i<deids.length; i++) {
+				deids[i]=Integer.valueOf(delIds[i]);
 			}
-			int result = service.deleteNoticeAll(ids);
+			result = service.deleteNoticeAll(deids);
 			break;
 		}
 		response.sendRedirect("list");
